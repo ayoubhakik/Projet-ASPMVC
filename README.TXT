@@ -3,8 +3,8 @@ initially to test your abilities to work in git please create your branch as a c
 Groupe memberes:
 -1:HAKIK Ayoub
 -2:BRIOUYA Asmae
--3:
--4:
+-3:Kamal Abderahmane
+-4:BRIOUYA Hasnae
 -5:
 -6:SIFANE Mouad
 
