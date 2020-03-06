@@ -13,5 +13,13 @@ namespace projetASP.Controllers
         {
             return View();
         }
+        public ActionResult Home()
+        {
+            return View();
+        }
+        public ActionResult Statistiques()
+        {
+            return View();
+        }
     }
 }
