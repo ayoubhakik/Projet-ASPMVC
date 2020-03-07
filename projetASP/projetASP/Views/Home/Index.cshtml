@@ -1,384 +1,74 @@
 ﻿
-@{
-    ViewBag.Title = "Test";
+@{ 
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <div class="content">
     <div class="container-fluid">
         <div class="row">
+            <table class="table table-responsive table-bordered" style="font-family: 'Times New Roman'">
+                <tr class="bg-info">
+                    <th style="text-align: left">Date&nbsp;|&nbsp;<?php echo date('Y');?> </th>
+                    <th style="text-align: center"> Description </th>
+                </tr>
+                <tr>
+                    <td>04 Février</td>
+                    <td>
+                        Ouverture de <strong>l'enregistrement en ligne des groupes PFE</strong> : Les étudiants de la 5ème année doivent s'enregistrer soit en monôme ou en binôme (selon les PFE).
+                    </td>
+                </tr>
+                <tr>
+                    <td>28 Février</td>
+                    <td><strong>Dernier délai</strong> pour l'enregistrement des groupes PFE. Tout retard sera pénalisé lors de l'évaluation</td>
+                </tr>
 
-            <div class="col-xl-12 col-lg-12">
-                <div class="card card-chart">
-                    <div class="card-header card-header-warning">
-                        <div class="ct-chart" id="websiteViewsChart"></div>
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title">Statistique des filieres</h4>
-                        <p class="card-category">Last update</p>
-                    </div>
-                    <div class="card-footer">
-                        <div class="stats">
-                            <i class="material-icons">access_time</i> text here inshallah
-                        </div>
-                    </div>
-                </div>
-            </div>
+                <tr>
+                    <td>03 Mars</td>
 
-        </div>
-        <div class="row">
-            <div class="col-xl-2 col-lg-6 col-md-6 col-sm-6">
-                <div class="card card-stats">
-                    <div class="card-header card-header-warning card-header-icon">
-                        <div class="card-icon">
-                            <i class="material-icons">store</i>
-                        </div>
-                        <p class="card-category">Industrie</p>
-                        <h3 class="card-title">45</h3>
-                    </div>
-                    <div class="card-footer">
-                        <div class="stats">
-                            <i class="material-icons"></i>54%
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-2 col-lg-6 col-md-6 col-sm-6">
-                <div class="card card-stats">
-                    <div class="card-header card-header-success card-header-icon">
-                        <div class="card-icon">
-                            <i class="material-icons">store</i>
-                        </div>
-                        <p class="card-category">procede</p>
-                        <h3 class="card-title">45</h3>
-                    </div>
-                    <div class="card-footer">
-                        <div class="stats">
-                            <i class="material-icons"></i>54%
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-2 col-lg-6 col-md-6 col-sm-6">
-                <div class="card card-stats">
-                    <div class="card-header card-header-danger card-header-icon">
-                        <div class="card-icon">
-                            <i class="material-icons">store</i>
-                        </div>
-                        <p class="card-category">Informatique</p>
-                        <h3 class="card-title">75</h3>
-                    </div>
-                    <div class="card-footer">
-                        <div class="stats">
-                            <i class="material-icons"></i> 12%
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-2 col-lg-6 col-md-6 col-sm-6">
-                <div class="card card-stats">
-                    <div class="card-header card-header-info card-header-icon">
-                        <div class="card-icon">
-                            <i class="material-icons">store</i>
-                        </div>
-                        <p class="card-category">Telecome</p>
-                        <h3 class="card-title">45</h3>
-                    </div>
-                    <div class="card-footer">
-                        <div class="stats">
-                            <i class="material-icons"></i> 32%
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-2 col-lg-6 col-md-6 col-sm-6">
-                <div class="card card-stats">
-                    <div class="card-header card-header-icon">
-                        <div class="card-icon">
-                            <i class="material-icons">list</i>
-                        </div>
-                        <p class="card-category">Pas encore</p>
-                        <h3 class="card-title">30</h3>
-                    </div>
-                    <div class="card-footer">
-                        <div class="stats">
-                            <i class="material-icons"></i>100%
+                    <td>
+                        <strong> Attribution des encadrants pédagogiques</strong> : Chaque groupe PFE doit contacter son encadrant pédagogique afin de bénéficier d'un suivi pédagogique de son PFE en collaboration avec l'encadrant industriel au sein de l'entreprise. Des rapports d'avancement du projet doivent être régulièrement enregistrés sur cette plateforme.
+                    </td>
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-2 col-lg-6 col-md-6 col-sm-6">
-                <div class="card card-stats">
-                    <div class="card-header card-header-icon">
-                        <div class="card-icon">
-                            <i class="material-icons">list</i>
-                        </div>
-                        <p class="card-category">Nombre Totale</p>
-                        <h3 class="card-title">340</h3>
-                    </div>
-                    <div class="card-footer">
-                        <div class="stats">
-                            <i class="material-icons"></i>30%
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12 col-md-12">
-                <div class="card">
-                    <div class="card-header card-header-primary">
-                        <h4 class="card-title">Informatique</h4>
-                    </div>
-                    <div class="card-body table-responsive">
-                        <table class="table table-hover">
-                            <thead class="text-warning">
-                            <th>ID</th>
-                            <th>nom</th>
-                            <th>prenom</th>
-                            <th>email</th>
-                            <th>age</th>
-                            <th>phone</th>
-                            <th>note</th>
-                            <th>chihaja</th>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Dakota Rice</td>
-                                    <td>$36,738</td>
-                                    <td>Niger</td>
-                                    <td>1</td>
-                                    <td>Dakota Rice</td>
-                                    <td>$36,738</td>
-                                    <td>Niger</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Minerva Hooper</td>
-                                    <td>$23,789</td>
-                                    <td>Curaçao</td>
-                                    <td>1</td>
-                                    <td>Dakota Rice</td>
-                                    <td>$36,738</td>
-                                    <td>Niger</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Sage Rodriguez</td>
-                                    <td>$56,142</td>
-                                    <td>Netherlands</td>
-                                    <td>1</td>
-                                    <td>Dakota Rice</td>
-                                    <td>$36,738</td>
-                                    <td>Niger</td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>Philip Chaney</td>
-                                    <td>$38,735</td>
-                                    <td>Korea, South</td>
-                                    <td>1</td>
-                                    <td>Dakota Rice</td>
-                                    <td>$36,738</td>
-                                    <td>Niger</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-12 col-md-12">
-                <div class="card">
-                    <div class="card-header card-header-success">
-                        <h4 class="card-title">Industrie</h4>
-                    </div>
-                    <div class="card-body table-responsive">
-                        <table class="table table-hover">
-                            <thead class="text-warning">
-                            <th>ID</th>
-                            <th>nom</th>
-                            <th>prenom</th>
-                            <th>email</th>
-                            <th>age</th>
-                            <th>phone</th>
-                            <th>note</th>
-                            <th>chihaja</th>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Dakota Rice</td>
-                                    <td>$36,738</td>
-                                    <td>Niger</td>
-                                    <td>1</td>
-                                    <td>Dakota Rice</td>
-                                    <td>$36,738</td>
-                                    <td>Niger</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Minerva Hooper</td>
-                                    <td>$23,789</td>
-                                    <td>Curaçao</td>
-                                    <td>1</td>
-                                    <td>Dakota Rice</td>
-                                    <td>$36,738</td>
-                                    <td>Niger</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Sage Rodriguez</td>
-                                    <td>$56,142</td>
-                                    <td>Netherlands</td>
-                                    <td>1</td>
-                                    <td>Dakota Rice</td>
-                                    <td>$36,738</td>
-                                    <td>Niger</td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>Philip Chaney</td>
-                                    <td>$38,735</td>
-                                    <td>Korea, South</td>
-                                    <td>1</td>
-                                    <td>Dakota Rice</td>
-                                    <td>$36,738</td>
-                                    <td>Niger</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-12 col-md-12">
-                <div class="card">
-                    <div class="card-header card-header-info">
-                        <h4 class="card-title">Procede</h4>
-                    </div>
-                    <div class="card-body table-responsive">
-                        <table class="table table-hover">
-                            <thead class="text-warning">
-                            <th>ID</th>
-                            <th>nom</th>
-                            <th>prenom</th>
-                            <th>email</th>
-                            <th>age</th>
-                            <th>phone</th>
-                            <th>note</th>
-                            <th>chihaja</th>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Dakota Rice</td>
-                                    <td>$36,738</td>
-                                    <td>Niger</td>
-                                    <td>1</td>
-                                    <td>Dakota Rice</td>
-                                    <td>$36,738</td>
-                                    <td>Niger</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Minerva Hooper</td>
-                                    <td>$23,789</td>
-                                    <td>Curaçao</td>
-                                    <td>1</td>
-                                    <td>Dakota Rice</td>
-                                    <td>$36,738</td>
-                                    <td>Niger</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Sage Rodriguez</td>
-                                    <td>$56,142</td>
-                                    <td>Netherlands</td>
-                                    <td>1</td>
-                                    <td>Dakota Rice</td>
-                                    <td>$36,738</td>
-                                    <td>Niger</td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>Philip Chaney</td>
-                                    <td>$38,735</td>
-                                    <td>Korea, South</td>
-                                    <td>1</td>
-                                    <td>Dakota Rice</td>
-                                    <td>$36,738</td>
-                                    <td>Niger</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-12 col-md-12">
-                <div class="card">
-                    <div class="card-header card-header-rose">
-                        <h4 class="card-title">Telecome</h4>
-                    </div>
-                    <div class="card-body table-responsive">
-                        <table class="table table-hover">
-                            <thead class="text-warning">
-                            <th>ID</th>
-                            <th>nom</th>
-                            <th>prenom</th>
-                            <th>email</th>
-                            <th>age</th>
-                            <th>phone</th>
-                            <th>note</th>
-                            <th>chihaja</th>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Dakota Rice</td>
-                                    <td>$36,738</td>
-                                    <td>Niger</td>
-                                    <td>1</td>
-                                    <td>Dakota Rice</td>
-                                    <td>$36,738</td>
-                                    <td>Niger</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Minerva Hooper</td>
-                                    <td>$23,789</td>
-                                    <td>Curaçao</td>
-                                    <td>1</td>
-                                    <td>Dakota Rice</td>
-                                    <td>$36,738</td>
-                                    <td>Niger</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Sage Rodriguez</td>
-                                    <td>$56,142</td>
-                                    <td>Netherlands</td>
-                                    <td>1</td>
-                                    <td>Dakota Rice</td>
-                                    <td>$36,738</td>
-                                    <td>Niger</td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>Philip Chaney</td>
-                                    <td>$38,735</td>
-                                    <td>Korea, South</td>
-                                    <td>1</td>
-                                    <td>Dakota Rice</td>
-                                    <td>$36,738</td>
-                                    <td>Niger</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
 
+
+                </tr>
+
+                <tr>
+                    <td>10 Mars</td>
+
+                    <td>Dernier délai pour <strong>l'insertion du sujet</strong> : Tous les groupes PFE doivent compléter leur formulaire PFE en y insérant les données concernant le PFE et l'entreprise. Tout retard sera pénalisé lors de l'évaluation.</td>
+                </tr>
+                <tr>
+                    <td>01 Mai</td>
+                    <td>
+                        <strong>Dernier délai pour l'enregistrement du 1er rapport d'avancement </strong> Chaque groupe PFE doit enregistrer son 1er rapport d'avancement en format pdf sur cette plateforme.
+                    </td>
+                </tr>
+                <tr>
+                    <td>30 Mai</td>
+                    <td>
+                        <strong>Affichage du planning des soutenances des PFE.</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td>05 Juin</td>
+                    <td><strong>Dernier délai pour l'enregistrement du rapport final </strong>  : Chaque groupe PFE doit enregistrer son rapport final en format pdf sur cette plateforme.</td>
+                </tr>
+                <tr>
+                    <td> 10 Juin</td>
+                    <td><strong>Dernier délai pour le dépôt du rapport final</strong> : Chaque groupe doit déposer 3 exemplaires du rapports final imprimé au secrétariat du département IRT. Tout retard sera pénalisé lors de l'évaluation.</td>
+                </tr>
+                <tr>
+                    <td> <strong>Du 17/06 au 22/06 </strong> </td>
+                    <td><strong> <!-- <a href="planning_2017-2018.htm" target="_blank"> --> Dates des soutenances des PFE.</strong></td>
+                </tr>
+                <tr>
+                    <td> 02/07/2019</td>
+                    <td>
+                        <strong>Dernier delai pour le dépot du rapport final corrigé + CDROM </strong>: Afin de valider le PFE, chaque groupe doit déposer, au secrétariat du département IRT, la version papier finale du rapport corrigé selon les instructions du jury, muni d'un CDROM contenant tous les éléments du projet (Rapport, Présentation et Fichiers de démonstration...etc) et ce dans un délai de deux jours après la soutenance.
+                    </td>
+                </tr>
+            </table>
         </div>
     </div>
 </div>

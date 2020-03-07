@@ -11,6 +11,16 @@ namespace projetASP.Controllers
         // GET: Home
         public ActionResult Index()
         {
+            ViewBag.Current = "home";
+            ViewData["title"] = "Home";
+            return View();
+        }
+
+        public ActionResult ChargerLesDonnes()
+        {
+            ViewBag.Current = "ChargerLesDonnes";
+            ViewData["title"] = "Charger Les Donnes";
+
             return View();
         }
         public ActionResult Home()
